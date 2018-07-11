@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:h="http://xmlns.jcp.org/jsf/html" 
+      xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Musicas</title>
+    </h:head>
+    <h:body>
+        <script type="text/javascript">
+            function start() {
+                PF('statusDialog').show();
+            }
+
+            function stop() {
+                PF('statusDialog').hide();
+            }
+        </script>        
+        <h:form id="Musicas">            
+            <ui:include src="menu.xhtml" />
+            <p:separator />
+            <p:dataTable var="musica"  value="#{musicasPaginator.musicas}" rows="10" paginator="true"  caseSensitiveSort="true"
+                         paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                         rowsPerPageTemplate="5,10,15" emptyMessage="Não existem livros cadastrados">
+                <p:column headerText="Título" sortBy="#{musica.titulo}">
+                    <h:outputText value="#{musica.titulo}" />
+                </p:column>
+                <p:column headerText="Duração" sortBy="#{musica.duracao}">
+                    <h:outputText value="#{musica.duracao}" />
+                </p:column>             
+                <p:column headerText="Link" sortBy="#{musica.link}">
+                    <h:outputText value="#{musica.link}" />
+                </p:column>                
+                <p:column headerText="Artistas">
+                    <ui:repeat value="#{musica.artistas}" var="artista" varStatus="status">
+                        <ui:fragment rendered="#{status.index != 0}">
+                            <h:outputText value=", " />
+                        </ui:fragment>
+                        <h:outputText value="#{artista.titulo}" />
+                    </ui:repeat>
+                </p:column>    
+            </p:dataTable>
+        </h:form>
+    </h:body>
+</html>

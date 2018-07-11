@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset> 
+        
+
+    <!-- Usuario id = 1-->
+    <TB_USUARIO 
+        DISC_USUARIO = "P"
+        TXT_NOME = "Leo"
+        TXT_EMAIL = "play@gmail.com"
+        TXT_SENHA = "CclientTeste123"
+        /> 
+    
+    <!-- CartaoCredito id = 1 -->
+    <TB_CARTAO_CREDITO  TXT_BANDEIRA = "VISA" DT_EXPIRACAO = "2018-04-10" TXT_NUMERO = "4073020000000002"/> 
+    <TB_PREMIUM ID_PREMIUM = "1" ID_CARTAO_CREDITO = "1"/>
+    <!-- CartaoCredito id = 2 -->
+    <TB_CARTAO_CREDITO TXT_BANDEIRA = "MASTERCARD" DT_EXPIRACAO = "2017-04-10" TXT_NUMERO = "5555666677778884"/> 
+    <TB_PREMIUM ID_PREMIUM = "2" ID_CARTAO_CREDITO = "2"/>
+    
+    <!-- Usuario id = 2-->
+    <TB_USUARIO TXT_NOME = "Lucas"
+                TXT_EMAIL = "lucas@gmail.com"
+                TXT_SENHA = "lLucas"
+                DISC_USUARIO = "P"
+                /> 
+    
+    <!-- CartaoCredito id = 3 -->
+    <TB_CARTAO_CREDITO  TXT_BANDEIRA = "VISA" DT_EXPIRACAO = "2016-06-17" TXT_NUMERO = "4084770193100046"/> 
+    <TB_PREMIUM ID_PREMIUM = "3" ID_CARTAO_CREDITO = "3"/>
+    
+    
+    <!-- Usuario id = 3-->
+    <TB_USUARIO TXT_NOME = "Zuzu"
+                TXT_EMAIL = "zuzuay@gmail.com"
+                TXT_SENHA = "Zzuzu123."
+                DISC_USUARIO = "P"
+                /> 
+
+    <!-- CartaoCredito id = 4 -->
+    <TB_CARTAO_CREDITO  TXT_BANDEIRA = "MAESTRO" DT_EXPIRACAO = "2015-01-17" TXT_NUMERO = "6759744303415452"/> 
+    <TB_PREMIUM ID_PREMIUM = "4" ID_CARTAO_CREDITO = "4"/>
+
+    <!-- Usuario id = 4-->
+    <TB_USUARIO TXT_NOME = "Playplayo"
+                TXT_EMAIL = "playplayo@gmail.com"
+                TXT_SENHA = "PPPplayplayote123."
+                DISC_USUARIO = "P"
+                /> 
+    
+    <!-- CartaoCredito id = 5 -->
+    <TB_CARTAO_CREDITO  TXT_BANDEIRA = "MAESTRO" DT_EXPIRACAO = "2015-02-18" TXT_NUMERO = "6759744303495452"/> 
+
+    <!-- Usuario id = 5-->
+    <TB_USUARIO TXT_NOME = "Marco"
+                TXT_EMAIL = "marco@gmail.com"
+                TXT_SENHA = "Mmarco123."
+                DISC_USUARIO = "F"
+                /> 
+    
+    <TB_FREE ID_FREE = "5" />
+
+    <TB_MUSICA TXT_TITULO = "zuzun"
+               TXT_DURACAO = "3.20"
+               TXT_LINK = "link"
+               TXT_REPUTACAO = "BOM"/>
+    <!-- Artista id = 1-->
+    <TB_ARTISTA TXT_NOME = "Black sabbath"
+                TXT_PAIS = "IRL"/>
+    
+    <!-- Artista id = 2-->
+    <TB_ARTISTA TXT_NOME = "Metallica"
+                TXT_PAIS = "USA"/>
+    
+    <!-- Artista id = 3-->
+    <TB_ARTISTA TXT_NOME = "Raça Negra"
+                TXT_PAIS = "BRA"/>
+    
+    <!-- Artista id = 4-->
+    <TB_ARTISTA TXT_NOME = "System of a Down"
+                TXT_PAIS = "USA"/>
+    
+    <!-- Musica id = 1-->
+    <TB_MUSICA 
+        TXT_TITULO = "iron man"
+        TXT_DURACAO = "3.20"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 2-->
+
+    <TB_ARTISTA TXT_NOME = "black sabbath"
+                TXT_PAIS = "USA"/>
+
+    <TB_ALBUM TXT_TITULO = "black"
+              TXT_GENERO = "heavy metal"/>
+    
+
+    <TB_MUSICA 
+        TXT_TITULO = "one"
+        TXT_DURACAO = "5.50"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 3-->
+    <TB_ARTISTA TXT_NOME = "Megadeth"
+                TXT_PAIS = "USA"/>
+    
+    <TB_ARTISTA TXT_NOME = "Eminem"
+                TXT_PAIS = "USA"/>
+    
+    <TB_ARTISTA TXT_NOME = "Gilberto Gil"
+                TXT_PAIS = "BRA"/>
+
+    <TB_ALBUM TXT_TITULO = "black"
+              TXT_GENERO = "heavy metal"/>
+    
+    
+    <!-- Musica id = 4-->
+    <TB_MUSICA 
+        TXT_TITULO = "playplayo man"
+        TXT_DURACAO = "3.20"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"
+    />
+    
+    <!-- Musica id = 5-->
+    <TB_MUSICA 
+        TXT_TITULO = "Enter Sandman"
+        TXT_DURACAO = "5.31"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 6-->
+    <TB_MUSICA 
+        TXT_TITULO = "Nothing else Matters"
+        TXT_DURACAO = "6.36"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 7-->
+    <TB_MUSICA 
+        TXT_TITULO = "Sad But True"
+        TXT_DURACAO = "5.26"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "MEDIO"/>
+    
+    <!-- Musica id = 8-->
+    <TB_MUSICA 
+        TXT_TITULO = "Master of Puppets"
+        TXT_DURACAO = "8.37"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 9-->
+    <TB_MUSICA 
+        TXT_TITULO = "Without Me"
+        TXT_DURACAO = "5.00"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 10-->
+    <TB_MUSICA 
+        TXT_TITULO = "Mockingbird"
+        TXT_DURACAO = "4.12"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 11-->
+    <TB_MUSICA 
+        TXT_TITULO = "Deja Vú"
+        TXT_DURACAO = "5.01"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 12-->
+    <TB_MUSICA 
+        TXT_TITULO = "The Warning"
+        TXT_DURACAO = "3.23"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 13-->
+    <TB_MUSICA 
+        TXT_TITULO = "Drop the Bomb on'en"
+        TXT_DURACAO = "4.49"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 14-->
+    <TB_MUSICA 
+        TXT_TITULO = "The Real Slim Shady"
+        TXT_DURACAO = "4.27"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 15-->
+    <TB_MUSICA 
+        TXT_TITULO = "Aquele Abraço"
+        TXT_DURACAO = "4.25"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 16-->
+    <TB_MUSICA 
+        TXT_TITULO = "Eu Só Quero Um Xodó"
+        TXT_DURACAO = "4.56"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 17-->
+    <TB_MUSICA 
+        TXT_TITULO = "Não Chores Mais"
+        TXT_DURACAO = "4.30"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+    
+    <!-- Musica id = 18-->
+    <TB_MUSICA 
+        TXT_TITULO = "Andar com Fé"
+        TXT_DURACAO = "3.19"
+        TXT_LINK = "link"
+        TXT_REPUTACAO = "BOM"/>
+
+    <!-- Album id = 1-->
+    <TB_ALBUM 
+        TXT_TITULO = "black"
+        TXT_GENERO = "heavy metal"/>
+    
+    <!-- Album id = 2-->
+    <TB_ALBUM
+            
+        TXT_TITULO = "plaasfd"
+        TXT_GENERO = "heavy metal"/>
+        
+    <!-- Album id = 3-->
+    <TB_ALBUM TXT_TITULO = "algo"
+              TXT_GENERO = "samba"/>
+    
+    <!-- Album id = 4-->
+    <TB_ALBUM TXT_TITULO = "Melhores MPB"
+              TXT_GENERO = "MPB"/>
+    
+    <!-- Album id = 5-->
+    <TB_ALBUM TXT_TITULO = "MBP Anos 2000"
+              TXT_GENERO = "MPB"/>
+    
+    <!-- Album id = 6-->
+    <TB_ALBUM TXT_TITULO = "Master of Puppets"
+              TXT_GENERO = "Heavy Metal"/>
+    
+    <!-- Playlist id = 1-->
+    <TB_PLAYLIST TXT_TITULO = "so heavy" ID_PREMIUM= "1"/>
+    
+    <!-- Playlist id = 2-->
+    <TB_PLAYLIST TXT_TITULO = "MPB" ID_PREMIUM= "2"/>
+    
+    <!-- Playlist id = 3-->
+    <TB_PLAYLIST TXT_TITULO = "This is Metallica" ID_PREMIUM= "3"/>
+    
+    <!-- Playlist id = 4-->
+    <TB_PLAYLIST TXT_TITULO = "This is Eminem" ID_PREMIUM= "4"/>
+    
+    <!-- Playlist id = 5-->
+    <TB_PLAYLIST TXT_TITULO = "Metal plus Rap" ID_PREMIUM= "5"/>
+    
+    
+   
+    <!-- INSERT NO ALBUM 2 -->
+    <TB_ALBUM_MUSICA ID_MUSICA="1" ID_ALBUM="2"/>
+    <TB_ALBUM_MUSICA ID_MUSICA="2" ID_ALBUM="2"/>
+    <TB_ALBUM_MUSICA ID_MUSICA="4" ID_ALBUM="2"/>
+    
+    <!-- Musica_Artista -->
+    <TB_MUSICA_ARTISTA ID_MUSICA="2" ID_ARTISTA="2"/>
+        
+    <!-- INSERT NA PLAYLIST 1 -->
+    <TB_PLAYLIST_MUSICA ID_MUSICA="1" ID_PLAYLIST="1"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="2" ID_PLAYLIST="1"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="3" ID_PLAYLIST="2"/>
+    
+    <!-- INSERT NA PLAYLIST 2 -->
+    <TB_PLAYLIST_MUSICA ID_MUSICA="15" ID_PLAYLIST="2"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="16" ID_PLAYLIST="2"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="17" ID_PLAYLIST="2"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="18" ID_PLAYLIST="2"/>
+    
+    <!-- INSERT NA PLAYLIST 3 -->
+    <TB_PLAYLIST_MUSICA ID_MUSICA="5" ID_PLAYLIST="3"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="6" ID_PLAYLIST="3"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="7" ID_PLAYLIST="3"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="8" ID_PLAYLIST="3"/>
+    
+    <!-- INSERT NA PLAYLIST 4 -->
+    <TB_PLAYLIST_MUSICA ID_MUSICA="9" ID_PLAYLIST="4"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="10" ID_PLAYLIST="4"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="11" ID_PLAYLIST="4"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="12" ID_PLAYLIST="4"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="13" ID_PLAYLIST="4"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="14" ID_PLAYLIST="4"/>
+    
+    <!-- INSERT NA PLAYLIST 5 -->
+    <TB_PLAYLIST_MUSICA ID_MUSICA="5" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="6" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="7" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="8" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="9" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="10" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="11" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="12" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="13" ID_PLAYLIST="5"/>
+    <TB_PLAYLIST_MUSICA ID_MUSICA="14" ID_PLAYLIST="5"/>
+    
+</dataset>
