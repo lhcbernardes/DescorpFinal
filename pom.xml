@@ -15,14 +15,7 @@
         <glassfish.embedded-static-shell.jar>/home/bernardes/glassfish-4.1.1/glassfish/lib/embedded/glassfish-embedded-static-shell.jar</glassfish.embedded-static-shell.jar>
     </properties>   
     <dependencies>
-        <dependency>
-            <groupId>org.glassfish.main.extras</groupId>
-            <artifactId>glassfish-embedded-static-shell</artifactId>
-            <version>4.1.1</version>
-            <scope>system</scope>
-            <systemPath>${glassfish.embedded-static-shell.jar}</systemPath>
-        </dependency> 
-         <dependency>
+       <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>

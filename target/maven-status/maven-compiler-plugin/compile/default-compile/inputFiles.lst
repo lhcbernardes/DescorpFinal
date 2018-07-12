@@ -1,32 +1,28 @@
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/LoginBean.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Playlist.java
-/home/bernardes/Downloads/final/src/main/java/servico/CartaoServico.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/UsuarioBean.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Usuario.java
-/home/bernardes/Downloads/final/src/main/java/servico/AlbumServico.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/EnumBusca.java
-/home/bernardes/Downloads/final/src/main/java/servico/PremiumServico.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/AlbumBean.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/FacesContextProducer.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/ValidadorPais.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Album.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/Bean.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Entidade.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Premium.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Free.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Artista.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/MusicaBean.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/LogoutBean.java
-/home/bernardes/Downloads/final/src/main/java/servico/PlaylistServico.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Reputacao.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/BandeiraCartaoCredito.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/EntidadeConverter.java
-/home/bernardes/Downloads/final/src/main/java/servico/MusicaServico.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/CartaoCredito.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/ValidaPais.java
-/home/bernardes/Downloads/final/src/main/java/servico/ArtistaServico.java
-/home/bernardes/Downloads/final/src/main/java/servico/Servico.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/MusicasPaginator.java
-/home/bernardes/Downloads/final/src/main/java/servico/UsuarioServico.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/beans/ArtistaBean.java
-/home/bernardes/Downloads/final/src/main/java/com/mycompany/descorpv2/ejb/entidades/Musica.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/UsuarioBean.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Playlist.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/EntidadeConverter.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/BandeiraCartaoCredito.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Free.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Usuario.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/servico/AlbumServico.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/ValidaPais.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/MusicasPaginator.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/LogoutBean.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/AlbumBean.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/FacesContextProducer.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Entidade.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/CartaoCredito.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/EnumBusca.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/LoginBean.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/servico/MusicaServico.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/ValidadorPais.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Premium.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Musica.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/servico/UsuarioServico.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/MusicaBean.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Artista.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/servico/Servico.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Reputacao.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/bean/ArtistaBean.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/servico/ArtistaServico.java
+/home/bernardes/Área de Trabalho/DescorpFinal/src/main/java/com/mycompany/descorpv2/ejb/entidades/Album.java

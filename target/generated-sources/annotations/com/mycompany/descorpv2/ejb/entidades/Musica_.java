@@ -9,7 +9,7 @@ import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.6.1.v20150605-rNA", date="2018-07-10T22:25:50")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-07-11T17:58:29")
 @StaticMetamodel(Musica.class)
 public class Musica_ extends Entidade_ {
 
