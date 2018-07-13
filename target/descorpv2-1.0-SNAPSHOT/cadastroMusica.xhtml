@@ -15,29 +15,29 @@
                 <h:panelGrid columns="2" cellpadding="5">
 
                     <h:outputLabel for="titulo" value="Título: " />
-                    <p:inputText id="titulo" value="#{musicaBean.entidade.titulo}" label="Título" required="true" maxlength="50"/>
+                    <p:inputText id="titulo" value="#{musicaBean.musica.titulo}" label="Título" required="true" maxlength="50"/>
 
                     <h:outputLabel for="duracao" value="Duração: " />
-                    <p:inputText id="duracao" value="#{musicaBean.entidade.duracao}" label="Duração" required="true" maxlength="50"/>
+                    <p:inputText id="duracao" value="#{musicaBean.musica.duracao}" label="Duração" required="true" maxlength="50"/>
 
                     <h:outputLabel for="link" value="Link: " />
-                    <p:inputText id="link" value="#{musicaBean.entidade.link}" label="Link" required="true" maxlength="50"/>
+                    <p:inputText id="link" value="#{musicaBean.musica.link}" label="Link" required="true" maxlength="50"/>
 
                     <h:outputLabel for="reputacao" value="Reputação: " />
-                    <p:inputText id="reputacao" value="#{musicaBean.entidade.reputacao}" label="Reputação" required="true" maxlength="10"/>
+                    <p:inputText id="reputacao" value="#{musicaBean.musica.reputacao}" label="Reputação" required="true" maxlength="10"/>
 
                     <h:outputLabel for="artistas" value="Artistas: " />
-                    <p:selectCheckboxMenu id="artistas" value="#{musicaBean.entidade.artistas}" label="Artistas"
+                    <p:selectCheckboxMenu id="artistas" value="#{musicaBean.musica.artistas}" label="Artistas"
                                           filter="true" filterMatchMode="startsWith" 
                                           required="true">
                         <f:selectItems value="#{musicaBean.artistas}" var="artista" itemLabel="#{artista.nome}" itemValue="#{artista}"/>
                     </p:selectCheckboxMenu>
 
                     <h:outputLabel for="albuns" value="Album(s): " />
-                    <p:selectCheckboxMenu id="albuns" value="#{musicaBean.entidade.albuns}" label="Albuns"
+                    <p:selectCheckboxMenu id="albuns" value="#{musicaBean.musica.albuns}" label="Albuns"
                                           filter="true" filterMatchMode="startsWith" 
                                           required="true" >
-                        <f:selectItems value="#{musicaBean.albums}" var="album" itemLabel="#{album.titulo}" itemValue="#{album}"/>
+                        <f:selectItems value="#{musicaBean.albuns}" var="album" itemLabel="#{album.titulo}" itemValue="#{album}"/>
                     </p:selectCheckboxMenu>
 
                 </h:panelGrid>

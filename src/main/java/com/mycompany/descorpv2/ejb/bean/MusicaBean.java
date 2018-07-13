@@ -11,6 +11,7 @@ import javax.enterprise.context.SessionScoped;
 import com.mycompany.descorpv2.ejb.servico.AlbumServico;
 import com.mycompany.descorpv2.ejb.servico.ArtistaServico;
 import com.mycompany.descorpv2.ejb.servico.MusicaServico;
+import java.util.ArrayList;
 import javax.inject.Named;
 
 /**
@@ -31,10 +32,30 @@ public class MusicaBean implements Serializable {
     private MusicaServico musicaServico;
     
     private Musica musica;
+    private List<Musica> musicas;
+    private List<Album> albuns;
 
     @PostConstruct
     public void inicar() {
         musica = new Musica();
+        albuns = new ArrayList<>();
+        musicas = new ArrayList<>();
+    }
+
+    public Musica getMusica() {
+        return musica;
+    }
+
+    public void setMusica(Musica musica) {
+        this.musica = musica;
+    }
+
+    public List<Album> getAlbuns() {
+        return albuns;
+    }
+
+    public void setAlbuns(List<Album> albuns) {
+        this.albuns = albuns;
     }
     
     public List<Artista> getArtistas() {
@@ -44,9 +65,20 @@ public class MusicaBean implements Serializable {
     public List<Album> getAlbums() {
         return albumServico.getAlbuns();
     }
+    
+    public void setMusicas(List<Musica> musicas){
+        this.musicas = musicas;
+    }
+    
+    public List<Musica> getMusicas() {
+        if(!this.musicas.isEmpty()){
+            return this.musicas;
+        }
+        return this.musicas = musicaServico.getMusicas();
+    }
 
-    protected boolean salvar(Musica entidade) {
-        musicaServico.salvar(entidade);
+    public boolean salvar() {
+        musicaServico.salvar(musica);
         return true;
     }
 }
