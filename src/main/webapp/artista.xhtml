@@ -8,17 +8,18 @@
     <h:body>
         <h:form id="Artista">            
             <p:growl id="growl" life="3500" autoUpdate="true"/>
+            <ui:include src="menu.xhtml" />
             <p:separator />
             <p:panel id="panel" header="Cadastro de Artista" footer="Spotfy - piratinha">
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputLabel for="Nome" value="Nome: " />
-                    <p:inputText id="primeiroNome" value="#{artistaBean.artista.nome}" label="Nome" />
+                    <p:inputText id="Nome" value="#{artistaBean.artista.nome}" label="Nome" />
 
                     <h:outputLabel for="pais" value="País: " />
-                    <p:inputText id="ultimoNome" value="#{artistaBean.artista.pais}" label="ex: BRA"/>
+                    <p:inputText id="pais" value="#{artistaBean.artista.pais}" label="ex: BRA"/>
                 </h:panelGrid>
                 <p:commandButton action="#{artistaBean.salvar()}" value="Salvar" ajax="true" update="growl, panel" 
-                                 title="Salvar Artista" icon="ui-icon-check" validateClient="false"/>
+                                title="Salvar Artista" icon="ui-icon-check" validateClient="false"/>
             </p:panel>
         </h:form>
     </h:body>

@@ -53,13 +53,12 @@ public abstract class Servico<Entidade> {
         return em.find(classe, idEntidade);
     }
 
-    @PermitAll /* Provisório :) */
+    @PermitAll
     @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<Entidade> listar() {
         CriteriaQuery criteria = em.getCriteriaBuilder().createQuery();
         criteria.select(criteria.from(classe));
 
-        //return (List<Entidade>) em.createQuery("From " + classe + " c").getResultList();
         return em.createQuery(criteria).getResultList();
     }
 

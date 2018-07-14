@@ -4,7 +4,7 @@ import com.mycompany.descorpv2.ejb.entidades.Artista;
 import java.io.Serializable;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.SessionScoped;
 import com.mycompany.descorpv2.ejb.servico.ArtistaServico;
 import javax.inject.Named;
 
@@ -20,9 +20,9 @@ public class ArtistaBean implements Serializable {
     private ArtistaServico artistaServico;
     
     private Artista artista;
-    
+     
     @PostConstruct
-    public void inicarArtista(){
+    public void inicar(){
         artista = new Artista();
     }
 
@@ -34,8 +34,8 @@ public class ArtistaBean implements Serializable {
         this.artista = artista;
     }
     
-    public boolean salvar(Artista entidade) {
-        artistaServico.salvar(entidade);
+    public boolean salvar() {
+        artistaServico.salvar(artista);
         return true;
     }
 }

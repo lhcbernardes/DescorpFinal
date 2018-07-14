@@ -5,7 +5,7 @@ import com.mycompany.descorpv2.ejb.servico.AlbumServico;
 import java.io.Serializable;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
 /**
@@ -26,8 +26,8 @@ public class AlbumBean implements Serializable {
         album = new Album();
     }
 
-    public boolean salvar(Album entidade) {
-        albumServico.salvar(entidade);
+    public boolean salvar() {
+        albumServico.salvar(album);
         return true;
     }
 

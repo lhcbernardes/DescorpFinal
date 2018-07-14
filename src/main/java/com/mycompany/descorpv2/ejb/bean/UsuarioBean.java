@@ -5,11 +5,13 @@
  */
 package com.mycompany.descorpv2.ejb.bean;
 
-import com.mycompany.descorpv2.ejb.entidades.Free;
+import com.mycompany.descorpv2.ejb.entidades.CartaoCredito;
+import com.mycompany.descorpv2.ejb.entidades.Premium;
 import com.mycompany.descorpv2.ejb.entidades.Usuario;
+import com.mycompany.descorpv2.ejb.servico.CartaoServico;
 import java.io.Serializable;
 import javax.inject.Named;
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import com.mycompany.descorpv2.ejb.servico.UsuarioServico;
@@ -18,30 +20,51 @@ import com.mycompany.descorpv2.ejb.servico.UsuarioServico;
  *
  * @author leandro
  */
-@RequestScoped
+@SessionScoped
 @Named(value = "usuarioBean")
 public class UsuarioBean implements Serializable {
 
     @EJB
     private UsuarioServico usuarioServico;
     
-    private Usuario usuario;
+    @EJB
+    private CartaoServico cartaoServico;
+    
+    private CartaoCredito cartao;
+    private Premium usuario;
 
     @PostConstruct
     public void iniciar(){
-        usuario = new Free();
+        usuario = new Premium();
+        cartao = new CartaoCredito();
     }
-    
-    public Usuario getUsuario() {
+
+    public CartaoCredito getCartao() {
+        return cartao;
+    }
+
+    public void setCartao(CartaoCredito cartao) {
+        this.cartao = cartao;
+    }
+
+    public Premium getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
+    public void setUsuario(Premium usuario) {
         this.usuario = usuario;
     }
-
-    protected boolean salvar(Usuario entidade){
-        usuarioServico.salvar(entidade);
+    
+    public boolean salvar(){
+        try{
+            
+            usuario.setCartaoCredito(cartao);
+            
+            usuarioServico.salvar(usuario);
+            cartaoServico.salvar(cartao);
+        } catch(Exception ex){
+            ex.printStackTrace();
+        }
         return true;
     }
 }

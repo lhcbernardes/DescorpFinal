@@ -9,18 +9,11 @@ import com.mycompany.descorpv2.ejb.entidades.CartaoCredito;
 import com.mycompany.descorpv2.ejb.entidades.Free;
 import com.mycompany.descorpv2.ejb.entidades.Premium;
 import com.mycompany.descorpv2.ejb.entidades.Usuario;
-import javax.annotation.PostConstruct;
-import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
-import static javax.ejb.TransactionAttributeType.REQUIRED;
-import javax.ejb.TransactionManagement;
-import static javax.ejb.TransactionManagementType.CONTAINER;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
-import javax.validation.executable.ExecutableType;
-import javax.validation.executable.ValidateOnExecution;
 import org.hibernate.validator.constraints.NotBlank;
 
 /**
@@ -33,6 +26,20 @@ public class UsuarioServico extends Servico<Usuario> {
     public UsuarioServico() {
         super(Usuario.class);
     }
+
+    @Override
+    public void salvar(Usuario entidade) {
+
+        if(isFree(entidade)){
+            entidade = (Free) entidade;
+        } else{
+            entidade = (Premium) entidade;
+        }
+
+        super.salvar(entidade);
+    }
+    
+    
     
     public Premium tornarPremium(Usuario usuario, CartaoCredito cartaoCredito) {
         Premium premium = (Premium) usuario;

@@ -2,6 +2,7 @@ package com.mycompany.descorpv2.ejb.entidades;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -52,7 +53,7 @@ public static final String ALBUM_POR_GENERO = "AlbumPorPais";
     @Column(name = "TXT_GENERO")
     private String genero;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.REMOVE, CascadeType.PERSIST})
     @JoinTable(name = "TB_ALBUM_MUSICA", 
             joinColumns = @JoinColumn(name = "ID_ALBUM"),
             inverseJoinColumns = @JoinColumn(name = "ID_MUSICA")

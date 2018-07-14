@@ -47,6 +47,6 @@ public class ArtistaServico extends Servico<Artista> {
 
    @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<Artista> getArtistas() {
-        return getEntidades(Artista.ARTISTAS, null);
+        return getEntidades(Artista.ARTISTAS);
     }
 }

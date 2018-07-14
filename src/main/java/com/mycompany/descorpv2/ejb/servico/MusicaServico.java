@@ -31,6 +31,6 @@ public class MusicaServico extends Servico<Musica> {
 
     @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<Musica> getMusicas() {
-        return getEntidades(Musica.MUSICAS, null);
+        return getEntidades(Musica.MUSICAS);
     }
 }

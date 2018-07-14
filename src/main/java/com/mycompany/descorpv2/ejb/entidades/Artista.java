@@ -2,6 +2,7 @@ package com.mycompany.descorpv2.ejb.entidades;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -49,7 +50,7 @@ public class Artista extends Entidade implements Serializable {
     public static final String ARTISTA_POR_ID = "ArtistaPorId";
     public static final String ARTISTAS = "Artistas";
     
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.REMOVE})
     @JoinTable(name = "TB_MUSICA_ARTISTA",
             joinColumns = @JoinColumn(name = "ID_ARTISTA"),
             inverseJoinColumns = @JoinColumn(name = "ID_MUSICA")

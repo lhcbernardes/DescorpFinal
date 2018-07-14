@@ -29,7 +29,7 @@ public class AlbumServico extends Servico<Album> {
 
     @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<Album> getAlbuns() {
-        return getEntidades(Album.ALBUM_POR_TITULO, null);
+        return getEntidades(Album.ALBUM_POR_TITULO);
     }
 
     public boolean existe(@NotNull Album entidade) {

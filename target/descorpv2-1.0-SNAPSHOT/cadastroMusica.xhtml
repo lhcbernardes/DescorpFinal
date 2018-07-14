@@ -14,32 +14,32 @@
             <p:panel id="panel" header="Cadastro de Música" footer="Spotfi - Piratinha">
                 <h:panelGrid columns="2" cellpadding="5">
 
-                    <h:outputLabel for="titulo" value="Título: " />
-                    <p:inputText id="titulo" value="#{musicaBean.entidade.titulo}" label="Título" required="true" maxlength="50"/>
+                    <h:outputLabel for="tituloMusica" value="Título: " />
+                    <p:inputText id="tituloMusica" value="#{musicaBean.musica.titulo}" label="Título" required="true" maxlength="50"/>
 
                     <h:outputLabel for="duracao" value="Duração: " />
-                    <p:inputText id="duracao" value="#{musicaBean.entidade.duracao}" label="Duração" required="true" maxlength="50"/>
+                    <p:inputText id="duracao" value="#{musicaBean.musica.duracao}" label="Duração" required="true" maxlength="50"/>
 
                     <h:outputLabel for="link" value="Link: " />
-                    <p:inputText id="link" value="#{musicaBean.entidade.link}" label="Link" required="true" maxlength="50"/>
+                    <p:inputText id="link" value="#{musicaBean.musica.link}" label="Link" required="true" maxlength="50"/>
 
                     <h:outputLabel for="reputacao" value="Reputação: " />
-                    <p:inputText id="reputacao" value="#{musicaBean.entidade.reputacao}" label="Reputação" required="true" maxlength="10"/>
+                    <p:inputText id="reputacao" value="#{musicaBean.musica.reputacao}" label="Reputação" required="true" maxlength="10"/>
+                    
+                    <p:separator/>
+                    <h3>Album</h3>
+                    <h:outputLabel for="tituloAlbum" value="Titulo: " />
+                    <p:inputText id="tituloAlbum" value="#{musicaBean.album.titulo}" label="Titulo" />
 
-                    <h:outputLabel for="artistas" value="Artistas: " />
-                    <p:selectCheckboxMenu id="artistas" value="#{musicaBean.entidade.artistas}" label="Artistas"
-                                          filter="true" filterMatchMode="startsWith" 
-                                          required="true">
-                        <f:selectItems value="#{musicaBean.artistas}" var="artista" itemLabel="#{artista.nome}" itemValue="#{artista}"/>
-                    </p:selectCheckboxMenu>
+                    <h:outputLabel for="genero" value="Genero: " />
+                    <p:inputText id="genero" value="#{musicaBean.album.genero}" label="ex: rock"/>
+                    <p:separator/>
+                    <h3>Artista</h3>
+                    <h:outputLabel for="Nome" value="Nome: " />
+                    <p:inputText id="Nome" value="#{musicaBean.artista.nome}" label="Nome" />
 
-                    <h:outputLabel for="albuns" value="Album(s): " />
-                    <p:selectCheckboxMenu id="albuns" value="#{musicaBean.entidade.albuns}" label="Albuns"
-                                          filter="true" filterMatchMode="startsWith" 
-                                          required="true" >
-                        <f:selectItems value="#{musicaBean.albums}" var="album" itemLabel="#{album.titulo}" itemValue="#{album}"/>
-                    </p:selectCheckboxMenu>
-
+                    <h:outputLabel for="pais" value="País: " />
+                    <p:inputText id="pais" value="#{musicaBean.artista.pais}" label="ex: BRA"/>
                 </h:panelGrid>
                 <p:commandButton action="#{musicaBean.salvar()}" value="Salvar" ajax="true" update="growl, panel" 
                                  title="Salvar Autor" icon="ui-icon-check" validateClient="true"/>
