@@ -6,6 +6,7 @@ package com.mycompany.descorpv2.ejb.entidades;
  */
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -41,12 +42,12 @@ public class Musica extends Entidade implements Serializable {
     public static final String MUSICA_POR_TITULO = "MusicaPorTitulo";
     public static final String MUSICAS = "Musicas";
 
-    @NotBlank
+    @NotBlank (message = "Não pode ser vazio")
     @Size(max = 50)
     @Column(name = "TXT_TITULO")
     private String titulo;
     
-    @NotNull
+    @NotNull (message = "Não pode ser null")
     @Column(name = "TXT_DURACAO")
     private float duracao;
 
@@ -55,16 +56,16 @@ public class Musica extends Entidade implements Serializable {
     private String link;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "TXT_REPUTACAO")
+    @Column(name = "TXT_REPUTACAO", nullable = true)
     private Reputacao reputacao;
 
-    @ManyToMany(mappedBy = "musicas")
+    @ManyToMany(mappedBy = "musicas", cascade = {CascadeType.PERSIST})
     private List<Artista> artistas;
     
     @ManyToMany(mappedBy = "musicas")
     private List<Playlist> playlists;
 
-    @ManyToMany(mappedBy = "musicas")
+    @ManyToMany(mappedBy = "musicas", cascade = {CascadeType.PERSIST})
     private List<Album> albuns;
 
     public String getTitulo() {

@@ -4,9 +4,16 @@ C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\j
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\Entidade.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\Album.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\servico\AlbumServico.java
+C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\servico\PlaylistServico.java
+C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\validadores\ValidadorPais.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\ValidaPais.java
+C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\validadores\ValidaPais.java
+C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\enums\EnumBandeiraCC.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\bean\FacesContextProducer.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\servico\MusicaServico.java
+C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\enums\EnumBusca.java
+C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\servico\CartaoServico.java
+C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\bean\PlaylistBean.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\CartaoCredito.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\Premium.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\Usuario.java
@@ -15,6 +22,7 @@ C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\j
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\bean\AlbumBean.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\bean\UsuarioBean.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\BandeiraCartaoCredito.java
+C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\enums\EnumReputacao.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\ValidadorPais.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\bean\EntidadeConverter.java
 C:\Users\Usuario\Documents\Repositories\leosafadoprojeto\DescorpFinal\src\main\java\com\mycompany\descorpv2\ejb\entidades\Musica.java

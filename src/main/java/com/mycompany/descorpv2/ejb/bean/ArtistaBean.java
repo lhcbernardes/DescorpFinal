@@ -22,7 +22,7 @@ public class ArtistaBean implements Serializable {
     private Artista artista;
      
     @PostConstruct
-    public void inicarArtista(){
+    public void inicar(){
         artista = new Artista();
     }
 

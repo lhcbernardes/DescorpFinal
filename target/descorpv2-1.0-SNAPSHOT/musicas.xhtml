@@ -27,10 +27,7 @@
                 </p:column>
                 <p:column headerText="Duração" sortBy="#{musica.duracao}">
                     <h:outputText value="#{musica.duracao}" />
-                </p:column>             
-                <p:column headerText="Link" sortBy="#{musica.link}">
-                    <h:outputText value="#{musica.link}" />
-                </p:column>                
+                </p:column>                        
                 <p:column headerText="Artistas">
                     <ui:repeat value="#{musica.artistas}" var="artista" varStatus="status">
                         <ui:fragment rendered="#{status.index != 0}">
@@ -38,7 +35,16 @@
                         </ui:fragment>
                         <h:outputText value="#{artista.titulo}" />
                     </ui:repeat>
-                </p:column>    
+                </p:column> 
+                <p:column headerText="Albuns">
+                    <ui:repeat value="#{musica.albuns}" var="album" varStatus="status">
+                        <ui:fragment rendered="#{status.index != 0}">
+                            <h:outputText value=", " />
+                        </ui:fragment>
+                        <h:outputText value="#{album.titulo}" />
+                    </ui:repeat>
+                </p:column>
+                
             </p:dataTable>
         </h:form>
     </h:body>
